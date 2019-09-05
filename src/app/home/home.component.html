@@ -1,0 +1,58 @@
+<div class="container text-center">
+  <div class="row">
+    <div class="col-6 sm-col-6">
+      <br><br><br>
+      <h1>Biblioteca Google</h1>
+      <p class="lead">
+        Gerencie sua biblioteca<br>
+        De uma maneira fácil você conseguirá selecionar os seus livros favoritos.
+      </p>
+    </div>
+
+    <div class="col-6 sm-col-6">
+      <div class="border">
+        <div class="login">
+          <h2>Login</h2>
+          <form method="post" action="">
+            <p>
+              <label class="active" for="email">Email</label><br>
+              <input id="email" name="email" type="email" class="validate" #usuario>
+            </p>
+
+            <p>
+              <label class="active" for="senha">Senha</label><br>
+              <input id="senha" name="senha" type="password" class="validate" #senha>
+            </p>
+            <p>
+              <button type="submit" class="btn btn-primary"
+                (click)="fazerLogin(usuario.value, senha.value)">Login</button>
+            </p>
+
+            <div class="alert alert-danger" role="alert" *ngIf="message">
+              {{ message }}
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-3 md-col-3">
+        <img src="https://images.livrariasaraiva.com.br/imagemnet/imagem.aspx/?pro_id=10293250&qld=90&l=430&a=-1"
+          alt="As Crônicas de Narnia (Volume Único) - C. S. Lewis" width="200px" height="230px">
+      </div>
+      <div class="col-3 md-col-3">
+        <img
+          src="https://http2.mlstatic.com/livro-a-queda-de-gondolin-j-r-r-tolkien-capa-dura-D_NQ_NP_931552-MLB28154733145_092018-F.jpg"
+          alt="Livro A Queda De Gondolin - J. R. R. Tolkien " width="200px" height="230px">
+      </div>
+      <div class="col-3 md-col-3">
+        <img src="https://images.foyles.co.uk/large/books/img/9/7/2/9789722325332.jpg"
+          alt="Harry Potter e a Pedra Filosofal - J. K. Rowling" width="200px" height="230px">
+      </div>
+      <div class="col-3 md-col-3">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/51WR6fehD%2BL.jpg"
+          alt="Herry Potter e o Enigma do Príncipe - J. K. Rowling" width="200px" height="230px">
+      </div>
+    </div>
+  </div>
+</div>

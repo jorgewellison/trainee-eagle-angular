@@ -1,0 +1,12 @@
+<header>
+  <nav class="navbar navbar-dark bg-dark text-light">
+    <div class="collapse navbar-collapse">
+      <a class="navbar-brand">Estante de Livros</a>
+      <ul class="navbar-nav mr-auto " *ngIf="logado()">
+        <li class="nav-item">
+          <button class="btn btn-danger" (click)='logout()' id='sair' [routerLink]="['']">Sair</button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
