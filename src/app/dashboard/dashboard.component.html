@@ -1,13 +1,13 @@
 <div>
   <input type="search" placeholder="Buscar livros" #search id="search" />
-  <button (click)="OnSearch(search.value)">Buscar</button>
+  <button (click)="OnSearch(search.value)">Buscar</button> <!-- usando a função buscar recebida pela injeção de dependencias no service google-book-api-->
 
 </div>
-<div *ngIf="books" id="f">
+<div *ngIf="books" id="f"> <!--  -->
   <div class="container">
 
     <div class="col-md-2 results-container" *ngFor="let book of books"
-      [routerLink]="['/dashboard', book.volumeInfo.industryIdentifiers[0].identifier]">
+      [routerLink]="['/dashboard', book.volumeInfo.industryIdentifiers[0].identifier]"> <!-- configuração da rota baseado no ID do livro-->
       {{book.volumeInfo.title}}
       <p *ngIf="book.volumeInfo.imageLinks"><img src={{book.volumeInfo.imageLinks.smallThumbnail}} height="200px" width="120px"/></p>
     </div>

@@ -2,7 +2,7 @@
   <nav class="navbar navbar-dark bg-dark text-light">
     <div class="collapse navbar-collapse">
       <a class="navbar-brand">Estante de Livros</a>
-      <ul class="navbar-nav mr-auto " *ngIf="logado()">
+      <ul class="navbar-nav mr-auto " *ngIf="logado()"> <!-- Executando a função recebida do service, para exibir o botão de sair ao ser logado -->
         <li class="nav-item">
           <button class="btn btn-danger" (click)='logout()' id='sair' [routerLink]="['']">Sair</button>
         </li>

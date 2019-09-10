@@ -2,6 +2,7 @@
   color: #fff;
 }
 
+/*Fixando o footer na parte inferior da tela*/
 footer {
   position: fixed;
   bottom: 0;

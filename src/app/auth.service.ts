@@ -10,7 +10,7 @@ export class AuthServiceService {
  constructor(private router: Router) {
 
   }
-  fazerLogin(usuario: string, senha: string) : any {
+  fazerLogin(usuario: string, senha: string) : any { //login simples apenas comparando os inputs com caracteres predefinidos
     if (usuario === 'eagle@gmail.com' && senha === 'voealto') {
       localStorage.setItem('username', 'Usuario');
       this.router.navigate(['dashboard']);

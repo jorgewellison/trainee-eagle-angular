@@ -8,7 +8,7 @@ export class GoogleBookApiService {
   constructor(private http: Http) { }
 
 
-  BuscarLivros(search) {
+  BuscarLivros(search) { //buscando livros na API utilizando a requisição get
     const encodedURI  = encodeURI("https://www.googleapis.com/books/v1/volumes?q="+ search +"&maxResults=12")
     return this.http.get(encodedURI)
         .map((response: Response) => response.json());

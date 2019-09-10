@@ -18,7 +18,7 @@ book;
 
     let isbn = this.route.snapshot.params['isbn'];
 
-    this.googleBooksApiService.BuscaViaISBN(isbn).
+    this.googleBooksApiService.BuscaViaISBN(isbn). //requisições http sendo feitas para recebimento do isbn de cada livro
          subscribe((data) => {
             console.log(data.items);
             this.book = data.items[0];

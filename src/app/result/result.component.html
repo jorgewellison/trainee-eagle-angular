@@ -1,13 +1,17 @@
 <div id="f" class="container">
   <div class="col-md-2">
     <div class="results-container rightBorder" *ngIf="book">
+      <!-- se houver um livro, a div será mostrada-->
 
       <p><img src={{book.volumeInfo.imageLinks.smallThumbnail}} /></p>
-      <h4>Aqui devia ser a média de avaliação {{book.volumeInfo.averageRating}}</h4>
+      <h2>Média</h2>
+      <h4>Aqui devia ser a média de avaliação, mas não tá funcionando e.e {{book.volumeInfo.averageRating}}</h4>
     </div>
   </div>
   <div class="col-md-9 rightBorder" *ngIf="book">
+    <!-- utilizando diretivas da api para serem exibidas na tela de detalhes -->
     <h1> {{book.volumeInfo.title}} </h1>
+    <br>
     <h2>Descrição</h2>
     <p>{{book.volumeInfo.description}}</p>
     <hr />
