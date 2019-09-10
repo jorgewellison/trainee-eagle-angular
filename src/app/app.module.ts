@@ -11,6 +11,7 @@ import { GoogleBookApiService } from './google-book-api.service';
 import { HeaderComponent } from './header/header.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AuthServiceService } from './auth.service';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AuthServiceService } from './auth.service';
     HomeComponent,
     ResultComponent,
     HeaderComponent,
-    DashboardComponent
+    DashboardComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

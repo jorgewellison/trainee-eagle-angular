@@ -8,6 +8,11 @@
 
 .justify-content-center{
   margin-top: 50px;
-  margin-left: 80px;
+  margin-left: 20px;
   margin-bottom: 30px;
+}
+
+.col-xl-2{
+  padding: 10px;
+
 }
